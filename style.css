@@ -1,0 +1,22 @@
+.delivery-content {
+    box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: #ffffff;
+    position: absolute;
+    display: none;
+}
+/* width */
+.delivery-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 45px;
+}
+
+/* Handle */
+.delivery-scrollbar::-webkit-scrollbar-thumb {
+    background: #fcca19;
+    border-radius: 76px;
+    max-height: 10px;
+}
+.border-black{
+    border: 1px solid;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="mx-48 mt-32">
+            <p
+                id="address-view"
+                class="ml-4 -mt-0.5 hover:text-orange-500 cursor-pointer transition-all rtl-direction-space-location text-gray-10 roboto-medium font-medium text-13"
+            >
+                House-D/1, Sukrabad, Dhanmondi-32, Dhaka-North, Dhaka-1207
+            </p>
+            <div class="ml-8 -mt-1 wrap">
+                <a
+                    class="text-gray-12 cursor-pointer change-toggle-button dm-bold font-bold text-11 border-gray-12 border-b"
+                    >Change</a
+                >
+                <div class="delivery-content">
+                    <p
+                        class="text-gray-12 text-sm roboto-medium font-medium px-5 flex my-2"
+                    >
+                        <span class="flex cursor-pointer view-country"></span>
+                        <span class="flex cursor-pointer view-state"></span>
+                        <span class="flex cursor-pointer view-city"></span>
+                    </p>
+                    <div>
+                        <div class="country-list">
+                            <div class="search-country relative">
+                                <svg
+                                    class="absolute right-7 top-7 bg-white"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M7.11111 1.77778C4.16559 1.77778 1.77778 4.16559 1.77778 7.11111C1.77778 10.0566 4.16559 12.4444 7.11111 12.4444C10.0566 12.4444 12.4444 10.0566 12.4444 7.11111C12.4444 4.16559 10.0566 1.77778 7.11111 1.77778ZM0 7.11111C0 3.18375 3.18375 0 7.11111 0C11.0385 0 14.2222 3.18375 14.2222 7.11111C14.2222 11.0385 11.0385 14.2222 7.11111 14.2222C3.18375 14.2222 0 11.0385 0 7.11111Z"
+                                        fill="#898989"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M11.816 11.8159C12.1631 11.4688 12.726 11.4688 13.0731 11.8159L15.7398 14.4826C16.0869 14.8297 16.0869 15.3925 15.7398 15.7396C15.3926 16.0868 14.8298 16.0868 14.4827 15.7396L11.816 13.073C11.4689 12.7258 11.4689 12.163 11.816 11.8159Z"
+                                        fill="#898989"
+                                    />
+                                </svg>
+                                <input
+                                    type="text"
+                                    placeholder="Search your country"
+                                    class="h-10 w-60 pr-10 pl-4 m-4 rounded-sm border-black roboto-medium text-sm text-gray-600 font-normal search-name"
+                                />
+                            </div>
+                            <ul
+                                class="list text-gray-10 text-sm list-select font-medium roboto-medium mt-4 delivery-scrollbar overflow-y-scroll h-60"
+                            >
+                                <li
+                                    class="country-name cursor-pointer py-3 hover:bg-yellow-10000 hover:text-gray-12 px-2.5"
+                                >
+                                    America
+                                </li>
+                                <li
+                                    class="country-name cursor-pointer py-3 hover:bg-yellow-100 hover:text-gray-12 px-2.5"
+                                >
+                                    Bangladesh
+                                </li>
+                                <li
+                                    class="country-name cursor-pointer py-3 hover:bg-yellow-100 hover:text-gray-12 px-2.5"
+                                >
+                                    India
+                                </li>
+                                <li
+                                    class="country-name cursor-pointer py-3 hover:bg-yellow-100 hover:text-gray-12 px-2.5"
+                                >
+                                    America
+                                </li>
+                                <li
+                                    class="country-name cursor-pointer py-3 hover:bg-yellow-100 hover:text-gray-12 px-2.5"
+                                >
+                                    Bangladesh
+                                </li>
+                                <li
+                                    class="country-name cursor-pointer py-3 hover:bg-yellow-100 hover:text-gray-12 px-2.5"
+                                >
+                                    India
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="state-list hidden">
+                            <div class="search-state relative">
+                                <svg
+                                    class="absolute right-7 top-7 bg-white"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M7.11111 1.77778C4.16559 1.77778 1.77778 4.16559 1.77778 7.11111C1.77778 10.0566 4.16559 12.4444 7.11111 12.4444C10.0566 12.4444 12.4444 10.0566 12.4444 7.11111C12.4444 4.16559 10.0566 1.77778 7.11111 1.77778ZM0 7.11111C0 3.18375 3.18375 0 7.11111 0C11.0385 0 14.2222 3.18375 14.2222 7.11111C14.2222 11.0385 11.0385 14.2222 7.11111 14.2222C3.18375 14.2222 0 11.0385 0 7.11111Z"
+                                        fill="#898989"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M11.816 11.8159C12.1631 11.4688 12.726 11.4688 13.0731 11.8159L15.7398 14.4826C16.0869 14.8297 16.0869 15.3925 15.7398 15.7396C15.3926 16.0868 14.8298 16.0868 14.4827 15.7396L11.816 13.073C11.4689 12.7258 11.4689 12.163 11.816 11.8159Z"
+                                        fill="#898989"
+                                    />
+                                </svg>
+                                <input
+                                    type="text"
+                                    placeholder="Search your state"
+                                    class="h-10 w-60 pr-10 pl-2 m-4 rounded-sm border-black roboto-medium text-sm text-gray-10 font-normal search-name"
+                                />
+                            </div>
+                            <ul
+                                class="list text-gray-10 text-sm list-select font-medium roboto-medium mt-4 delivery-scrollbar overflow-y-scroll h-60"
+                            >
+                                <li
+                                    class="state-name cursor-pointer py-3 hover:bg-yellow-100 hover:text-gray-12 px-2.5"
+                                >
+                                    Sirajganj
+                                </li>
+                                <li
+                                    class="state-name cursor-pointer py-3 hover:bg-yellow-100 hover:text-gray-12 px-2.5"
+                                >
+                                    Dhaka
+                                </li>
+                                <li
+                                    class="state-name cursor-pointer py-3 hover:bg-yellow-100 hover:text-gray-12 px-2.5"
+                                >
+                                    Rajshahi
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="city-list hidden">
+                            <div class="search-city relative">
+                                <svg
+                                    class="absolute right-7 top-7 bg-white"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M7.11111 1.77778C4.16559 1.77778 1.77778 4.16559 1.77778 7.11111C1.77778 10.0566 4.16559 12.4444 7.11111 12.4444C10.0566 12.4444 12.4444 10.0566 12.4444 7.11111C12.4444 4.16559 10.0566 1.77778 7.11111 1.77778ZM0 7.11111C0 3.18375 3.18375 0 7.11111 0C11.0385 0 14.2222 3.18375 14.2222 7.11111C14.2222 11.0385 11.0385 14.2222 7.11111 14.2222C3.18375 14.2222 0 11.0385 0 7.11111Z"
+                                        fill="#898989"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M11.816 11.8159C12.1631 11.4688 12.726 11.4688 13.0731 11.8159L15.7398 14.4826C16.0869 14.8297 16.0869 15.3925 15.7398 15.7396C15.3926 16.0868 14.8298 16.0868 14.4827 15.7396L11.816 13.073C11.4689 12.7258 11.4689 12.163 11.816 11.8159Z"
+                                        fill="#898989"
+                                    />
+                                </svg>
+                                <input
+                                    type="text"
+                                    placeholder="Search your city"
+                                    class="h-10 w-60 pr-10 pl-2 m-4 rounded-sm border-black roboto-medium text-sm text-gray-10 font-normal search-name"
+                                />
+                            </div>
+                            <ul
+                                class="list text-gray-10 text-sm list-select font-medium roboto-medium mt-4 delivery-scrollbar overflow-y-scroll h-60"
+                            >
+                                <li
+                                    class="city-name cursor-pointer py-3 hover:bg-yellow-100 hover:text-gray-12 px-2.5"
+                                >
+                                    Sirajganj Sadar
+                                </li>
+                                <li
+                                    class="city-name cursor-pointer py-3 hover:bg-yellow-100 hover:text-gray-12 px-2.5"
+                                >
+                                    Uttara
+                                </li>
+                                <li
+                                    class="city-name cursor-pointer py-3 hover:bg-yellow-100 hover:text-gray-12 px-2.5"
+                                >
+                                    Savar
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
